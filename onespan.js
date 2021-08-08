@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Test for Onespan
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @namespace    mailto:steelcrusher@hotmail.com
+// @version      0.2
 // @description  try to take over the world!
-// @author       You
+// @author       SteelCrusher
 // @match        http*://sandbox.esignlive.com/*
 // @match        https://sandbox.esignlive.com.*
 // @match        https://sandbox.esignlive.com/a/template/
