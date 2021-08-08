@@ -1,22 +1,32 @@
 // ==UserScript==
-// @name         Onespan Management Helper
-// @namespace    mailto:steelcrusher@hotmail.com
-// @version      0.3
-// @updateURL    https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
-// @downloadURL  https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
-// @description  Design to modify how Onepspan's management interface displays elements to help with alignment of items and also expand the zoom fonction. Add a button in the top of the page to activate or deactivate changes.
-// @author       SteelCrusher
-// @match        http*://sandbox.esignlive.com/*
-// @match        https://sandbox.esignlive.com.*
-// @match        https://sandbox.esignlive.com/a/template/
-// @match        https://sandbox.esignlive.com/
-// @match        https://sandbox.esignlive.com
-// @match        https://sandbox.esignlive.com/a/template/
+// @name        Onespan Management Helper
+// @namespace   mailto:steelcrusher@hotmail.com
+// @license     MIT (https://opensource.org/licenses/MIT)
+// @version     1.0.0
+// @updateURL   https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
+// @downloadURL https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
+// @description Design to modify how Onepspan's management interface displays elements to help with alignment of items and also expand the zoom fonction. Add a button in the top of the page to activate or deactivate changes.
+// @author      SteelCrusher
 
-// @grant        GM_addStyle
-// @require      http://code.jquery.com/jquery-3.4.1.min.js
+
+// @match       https://sandbox.esignlive.com*
+// @match       https://sandbox.esignlive.com/*
+// @match       https://sandbox.esignlive.com/a/template/
+
+// @run-at      document-start
+// @grant       GM_addStyle
+// @grant       unsafeWindow
+// @grant       window.onurlchange
+// @require     http://code.jquery.com/jquery-3.4.1.min.js
 // ==/UserScript==
 
+/*
+// Requires @grant window.onurlchange
+if (window.onurlchange === null) {
+	// feature is supported
+	window.addEventListener('urlchange', (info) => ...);
+}
+ */
 GM_addStyle(".devModeOn .js-setDevMode { background-color: lightgreen; }");
 GM_addStyle(".js-setDevMode { background-color: lightgrey; }");
 GM_addStyle(".devModeOn * [tabIndex]:focus:not(li):not([tabIndex='-1']):not(button):not(.border-focus-style):not(.border-focus-style-alternative):not(.no-focus-style) { outline-width: 0px !important }");
