@@ -4,7 +4,7 @@
 // @version      0.2
 // @updateURL    https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
 // @downloadURL  https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
-// @description  try to take over the world!
+// @description  Design to modify how Onepspan's management interface displays elements to help with alignment of items and also expand the zoom fonction. Add a button in the top of the page to activate or deactivate changes.
 // @author       SteelCrusher
 // @match        http*://sandbox.esignlive.com/*
 // @match        https://sandbox.esignlive.com.*
