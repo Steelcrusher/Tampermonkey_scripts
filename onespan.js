@@ -2,6 +2,8 @@
 // @name         Test for Onespan
 // @namespace    mailto:steelcrusher@hotmail.com
 // @version      0.2
+// @updateURL    https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
+// @downloadURL  https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
 // @description  try to take over the world!
 // @author       SteelCrusher
 // @match        http*://sandbox.esignlive.com/*
