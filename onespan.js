@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Test for Onespan
+// @name         Onespan Management Helper
 // @namespace    mailto:steelcrusher@hotmail.com
 // @version      0.2
 // @updateURL    https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
@@ -16,10 +16,9 @@
 // @grant        GM_addStyle
 // @require      http://code.jquery.com/jquery-3.4.1.min.js
 // ==/UserScript==
+
 GM_addStyle(".devModeOn .js-setDevMode { background-color: lightgreen; }");
 GM_addStyle(".js-setDevMode { background-color: lightgrey; }");
-//GM_addStyle(".devModeOn .resize-lb { display:none }");
-//GM_addStyle(".devModeOn .resize-rb { display:none }");
 GM_addStyle(".devModeOn * [tabIndex]:focus:not(li):not([tabIndex='-1']):not(button):not(.border-focus-style):not(.border-focus-style-alternative):not(.no-focus-style) { outline-width: 0px !important }");
 GM_addStyle(".devModeOn *:not(li):not(.border-focus-style):not(.border-focus-style-alternative):not(.no-focus-style)>button:focus { outline-width: 0px !important }");
 GM_addStyle(".devModeOn * textarea:focus:not(li):not(.border-focus-style):not(.border-focus-style-alternative):not(.no-focus-style) { outline-width: 0px !important }");
@@ -29,8 +28,6 @@ GM_addStyle(".devModeOn * input:focus:not(li):not(.border-focus-style):not(.bord
 GM_addStyle(".devModeOn .Select.is-focused>.Select-control{ outline-width: 0px !important }");
 GM_addStyle(".devModeOn .spot-rule{ display:none !important }");
 GM_addStyle(".devModeOn .spot .edge-icon { margin: 10px; }");
-
-
 GM_addStyle('.js-setDevMode {'+
             '    color: rgba(0, 0, 0, 0.87);'+
             '    padding: 0px 8px;'+
@@ -52,8 +49,6 @@ GM_addStyle('.js-setDevMode {'+
             '    vertical-align: middle;'+
             '    justify-content: center;'+
             '     border: 1px solid; border-radius: 5px;background: lightgray;}');
-
-//.devModeOn .resize-rb
 
 (function() {
 	'use strict';
@@ -96,8 +91,4 @@ GM_addStyle('.js-setDevMode {'+
 			$('body').removeClass('devModeOn');
 		}
 	};
-
-
-	// Your code here...
-
 })();
