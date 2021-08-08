@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Onespan Management Helper
 // @namespace    mailto:steelcrusher@hotmail.com
-// @version      0.2
+// @version      0.3
 // @updateURL    https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
 // @downloadURL  https://github.com/Steelcrusher/Tampermonkey_scripts/blob/main/onespan.js
 // @description  Design to modify how Onepspan's management interface displays elements to help with alignment of items and also expand the zoom fonction. Add a button in the top of the page to activate or deactivate changes.
