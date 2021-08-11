@@ -2,9 +2,11 @@
 // @name         Quepland_2
 // @namespace   mailto:steelcrusher@hotmail.com
 // @license     MIT (https://opensource.org/licenses/MIT)
-// @version      0.1
+// @version      0.2
 // @updateURL    https://raw.githubusercontent.com/Steelcrusher/Tampermonkey_scripts/main/Quepland_2.js
 // @downloadURL  https://raw.githubusercontent.com/Steelcrusher/Tampermonkey_scripts/main/Quepland_2.js
+// @updateURL    http://localhost/Tampermokey/Quepland_2.js
+// @downloadURL  http://localhost/Tampermokey/Quepland_2.js
 // @description  Quepland_2 Helper
 // @author       SteelCrusher
 
